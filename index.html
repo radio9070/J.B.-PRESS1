@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J.B. PRESS | Prensa & Difusión del Espectáculo · JB Producciones</title>
   
+  <!-- Favicon para que aparezca el logotipo en la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="c2c9a92e-0146-4b32-b647-89c73d1b2e52.png">
+  <link rel="shortcut icon" href="c2c9a92e-0146-4b32-b647-89c73d1b2e52.png" type="image/png">
+  <link rel="apple-touch-icon" href="c2c9a92e-0146-4b32-b647-89c73d1b2e52.png">
+
   <!-- Tipografías de Alto Impacto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +25,9 @@
         extend: {
           colors: {
             brand: {
-              red: '#e50914',
-              crimson: '#ff1a24',
-              ruby: '#bd081c',
-              rubyDark: '#750209',
+              gold: '#ffd700',
+              goldLight: '#fff2a8',
+              goldDark: '#b3820a',
               darkBg: '#050507',
               deepBlack: '#020203',
               cardBg: '#0d0d12',
@@ -38,8 +42,7 @@
             body: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           boxShadow: {
-            'glow-ruby': '0 0 40px -5px rgba(229, 9, 20, 0.55)',
-            'glow-red-lg': '0 0 65px -10px rgba(255, 26, 36, 0.6)',
+            'glow-gold': '0 0 35px -5px rgba(245, 185, 30, 0.45)',
             'glow-chrome': '0 0 30px -5px rgba(226, 232, 240, 0.3)',
           },
           animation: {
@@ -58,19 +61,19 @@
   </script>
 
   <style>
-    /* Efecto Metal Rojo Rubí 3D */
-    .metallic-ruby-text {
-      background: linear-gradient(145deg, 
-        #ffebee 0%, 
-        #ff4d58 20%, 
-        #e50914 45%, 
-        #820006 70%, 
-        #ff3b44 88%, 
+    /* Efecto Oro Metálico 3D Pulido */
+    .metallic-gold-text {
+      background: linear-gradient(135deg, 
+        #fff7c2 0%, 
+        #ffd700 25%, 
+        #f59e0b 50%, 
+        #b45309 72%, 
+        #ffeaa7 90%, 
         #ffffff 100%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 4px 18px rgba(229, 9, 20, 0.7));
+      filter: drop-shadow(0 2px 10px rgba(245, 185, 30, 0.55));
     }
 
     /* Efecto Cromo Plateado 3D */
@@ -96,25 +99,25 @@
     }
     
     .chrome-border-box:hover {
-      border-color: rgba(229, 9, 20, 0.6);
-      box-shadow: 0 0 30px rgba(229, 9, 20, 0.25);
+      border-color: rgba(245, 185, 30, 0.5);
+      box-shadow: 0 0 30px rgba(245, 185, 30, 0.2);
     }
 
     /* Malla de luces cinematográficas de fondo */
     .cinematic-bg {
       background-image: 
-        radial-gradient(ellipse at 50% 0%, rgba(229, 9, 20, 0.26) 0%, transparent 55%),
-        radial-gradient(circle at 85% 30%, rgba(200, 10, 25, 0.14) 0%, transparent 40%),
-        radial-gradient(circle at 15% 70%, rgba(148, 163, 184, 0.08) 0%, transparent 45%);
+        radial-gradient(ellipse at 50% 0%, rgba(217, 119, 6, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 85% 30%, rgba(180, 83, 9, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 15% 70%, rgba(226, 232, 240, 0.08) 0%, transparent 45%);
     }
 
-    /* Emblema Vectorial Biselado Estilo Logo JB */
-    .jb-logo-svg {
-      filter: drop-shadow(0 15px 30px rgba(229, 9, 20, 0.55));
+    /* Resplandor del nuevo logo dorado */
+    .gold-logo-glow {
+      filter: drop-shadow(0 15px 35px rgba(245, 158, 11, 0.45));
     }
   </style>
 </head>
-<body class="bg-brand-deepBlack text-slate-200 font-body selection:bg-brand-red selection:text-white antialiased overflow-x-hidden">
+<body class="bg-brand-deepBlack text-slate-200 font-body selection:bg-amber-500 selection:text-black antialiased overflow-x-hidden">
 
   <!-- ========================================================
        BARRA DE NAVEGACIÓN
@@ -123,18 +126,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo Branding en Navbar -->
+        <!-- Logo Branding en Navbar con nuevo logo e isotipo dorado -->
         <a href="#inicio" class="flex items-center gap-3.5 group">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-b from-red-500 via-brand-ruby to-brand-rubyDark p-[1.5px] shadow-lg shadow-red-900/50 group-hover:scale-105 transition-transform duration-300">
-            <div class="w-full h-full bg-[#0a0a0f] rounded-[10px] flex items-center justify-center font-heading font-black text-2xl tracking-tighter metallic-ruby-text">
-              JB
-            </div>
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-b from-amber-300 via-amber-500 to-amber-700 p-[1.5px] shadow-lg shadow-amber-900/40 group-hover:scale-105 transition-transform duration-300 overflow-hidden bg-black flex items-center justify-center">
+            <img src="c2c9a92e-0146-4b32-b647-89c73d1b2e52.png" alt="J.B. PRESS" class="w-full h-full object-contain p-0.5">
           </div>
           <div class="flex flex-col">
-            <span class="font-heading font-black text-xl tracking-wider text-white flex items-center gap-1.5">
-              J.B. <span class="metallic-ruby-text font-black">PRESS</span>
+            <span class="font-heading font-black text-xl tracking-wider metallic-gold-text flex items-center gap-1.5">
+              J.B. PRESS
             </span>
-            <span class="text-[9px] uppercase tracking-[0.25em] font-semibold text-slate-400 font-heading">
+            <span class="text-[9px] uppercase tracking-[0.25em] font-semibold text-amber-200/80 font-heading">
               Prensa & Espectáculo
             </span>
           </div>
@@ -142,24 +143,24 @@
 
         <!-- Menú de Enlaces de Navegación -->
         <nav class="hidden xl:flex items-center space-x-7 text-sm font-semibold tracking-wide">
-          <a href="#inicio" class="text-white hover:text-brand-crimson transition-colors">Inicio</a>
-          <a href="#servicios" class="text-slate-300 hover:text-brand-crimson transition-colors">Servicios</a>
-          <a href="#coberturas" class="text-slate-300 hover:text-brand-crimson transition-colors">Coberturas</a>
-          <a href="#prensa-medios" class="text-slate-300 hover:text-brand-crimson transition-colors">Prensa & Medios</a>
-          <a href="#redes" class="text-slate-300 hover:text-brand-crimson transition-colors flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-brand-crimson animate-ping"></span>
+          <a href="#inicio" class="text-white hover:text-amber-400 transition-colors">Inicio</a>
+          <a href="#servicios" class="text-slate-300 hover:text-amber-400 transition-colors">Servicios</a>
+          <a href="#coberturas" class="text-slate-300 hover:text-amber-400 transition-colors">Coberturas</a>
+          <a href="#prensa-medios" class="text-slate-300 hover:text-amber-400 transition-colors">Prensa & Medios</a>
+          <a href="#redes" class="text-slate-300 hover:text-amber-400 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
             <span>Redes Oficiales</span>
           </a>
-          <a href="#contacto" class="text-slate-300 hover:text-brand-crimson transition-colors">Contacto</a>
+          <a href="#contacto" class="text-slate-300 hover:text-amber-400 transition-colors">Contacto</a>
         </nav>
 
         <!-- CTA Directo WhatsApp en Nav -->
         <div class="hidden lg:flex items-center gap-4">
           <a href="https://wa.me/5491157072115?text=Hola%20J.B.%20PRESS,%20me%20comunico%20desde%20la%20web%20para%20consultar%20por%20prensa%20y%20difusión" 
              target="_blank" rel="noopener noreferrer" 
-             class="relative group overflow-hidden px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-red via-red-600 to-brand-rubyDark text-white font-heading font-bold text-xs uppercase tracking-wider shadow-glow-ruby hover:shadow-glow-red-lg transition-all duration-300 active:scale-95 flex items-center gap-2">
-            <span class="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-12 -translate-x-full group-hover:animate-shimmer pointer-events-none"></span>
-            <i class="fab fa-whatsapp text-base text-green-300"></i>
+             class="relative group overflow-hidden px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 text-slate-950 font-heading font-extrabold text-xs uppercase tracking-wider shadow-glow-gold hover:brightness-110 transition-all duration-300 active:scale-95 flex items-center gap-2">
+            <span class="absolute inset-0 w-1/2 h-full bg-white/30 skew-x-12 -translate-x-full group-hover:animate-shimmer pointer-events-none"></span>
+            <i class="fab fa-whatsapp text-base text-slate-950"></i>
             <span>+54 9 11 5707-2115</span>
           </a>
         </div>
@@ -174,16 +175,16 @@
     </div>
 
     <!-- Menú Desplegable Móvil -->
-    <div id="mobile-menu" class="hidden xl:hidden bg-[#0a0a0e] border-b border-red-900/30 px-6 py-6 space-y-4">
-      <a href="#inicio" class="block text-slate-200 hover:text-brand-crimson font-medium py-1">Inicio</a>
-      <a href="#servicios" class="block text-slate-200 hover:text-brand-crimson font-medium py-1">Servicios de Prensa</a>
-      <a href="#coberturas" class="block text-slate-200 hover:text-brand-crimson font-medium py-1">Coberturas de Espectáculos</a>
-      <a href="#prensa-medios" class="block text-slate-200 hover:text-brand-crimson font-medium py-1">Prensa & Medios</a>
-      <a href="#redes" class="block text-slate-200 hover:text-brand-crimson font-medium py-1">Redes Sociales Oficiales</a>
-      <a href="#contacto" class="block text-slate-200 hover:text-brand-crimson font-medium py-1">Contacto & Cotización</a>
+    <div id="mobile-menu" class="hidden xl:hidden bg-[#0a0a0e] border-b border-amber-900/30 px-6 py-6 space-y-4">
+      <a href="#inicio" class="block text-slate-200 hover:text-amber-400 font-medium py-1">Inicio</a>
+      <a href="#servicios" class="block text-slate-200 hover:text-amber-400 font-medium py-1">Servicios de Prensa</a>
+      <a href="#coberturas" class="block text-slate-200 hover:text-amber-400 font-medium py-1">Coberturas de Espectáculos</a>
+      <a href="#prensa-medios" class="block text-slate-200 hover:text-amber-400 font-medium py-1">Prensa & Medios</a>
+      <a href="#redes" class="block text-slate-200 hover:text-amber-400 font-medium py-1">Redes Sociales Oficiales</a>
+      <a href="#contacto" class="block text-slate-200 hover:text-amber-400 font-medium py-1">Contacto & Cotización</a>
       <div class="pt-2">
         <a href="https://wa.me/5491157072115" target="_blank" rel="noopener noreferrer" 
-           class="flex items-center justify-center gap-2.5 w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-red to-brand-rubyDark text-white font-heading font-bold text-sm tracking-wide shadow-glow-ruby">
+           class="flex items-center justify-center gap-2.5 w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-950 font-heading font-extrabold text-sm tracking-wide shadow-glow-gold">
           <i class="fab fa-whatsapp text-lg"></i>
           <span>WhatsApp: +54 9 11 5707-2115</span>
         </a>
@@ -192,13 +193,13 @@
   </header>
 
   <!-- ========================================================
-       HERO SECTION CON LOGO OFICIAL 3D CROMADO
+       HERO SECTION CON NUEVO LOGO OFICIAL DORADO
   ======================================================== -->
   <section id="inicio" class="relative pt-32 pb-24 md:pt-44 md:pb-36 cinematic-bg flex items-center overflow-hidden border-b border-white/5">
     
-    <!-- Luces volumétricas de fondo -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-red/15 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute -top-20 -right-20 w-96 h-96 bg-brand-ruby/20 rounded-full blur-[120px] pointer-events-none"></div>
+    <!-- Luces volumétricas doradas de fondo -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-yellow-600/15 rounded-full blur-[120px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -207,15 +208,15 @@
         <div class="lg:col-span-7 text-center lg:text-left">
           
           <!-- Badge Superior -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-red-950/60 border border-brand-red/40 text-red-300 text-xs md:text-sm font-semibold tracking-wider uppercase mb-6 shadow-inner">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-crimson animate-ping"></span>
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/40 text-amber-300 text-xs md:text-sm font-semibold tracking-wider uppercase mb-6 shadow-inner">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
             <span>Prensa, Comunicación & JB Producciones</span>
           </div>
 
-          <!-- Título Principal -->
+          <!-- Título Principal con J.B. PRESS en Dorado -->
           <h1 class="font-heading font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.08] text-white mb-6">
-            J.B. PRESS <br>
-            <span class="metallic-ruby-text">Prensa & Difusión</span> <br>
+            <span class="metallic-gold-text">J.B. PRESS</span> <br>
+            <span class="metallic-chrome-text">Prensa & Difusión</span> <br>
             del Espectáculo
           </h1>
 
@@ -227,13 +228,13 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="https://wa.me/5491157072115?text=Hola%20J.B.%20PRESS!%20Quiero%20solicitar%20presupuesto%20y%20asesoramiento%20de%20prensa" 
                target="_blank" rel="noopener noreferrer"
-               class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-red via-red-600 to-brand-rubyDark text-white font-heading font-bold text-sm uppercase tracking-wider shadow-glow-ruby hover:shadow-glow-red-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-center gap-3">
-              <i class="fab fa-whatsapp text-2xl text-green-300"></i>
+               class="px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 text-slate-950 font-heading font-extrabold text-sm uppercase tracking-wider shadow-glow-gold hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-center gap-3">
+              <i class="fab fa-whatsapp text-2xl text-slate-950"></i>
               <span>Contactar por WhatsApp</span>
             </a>
             <a href="#servicios" 
-               class="px-8 py-4 rounded-xl chrome-border-box text-slate-200 font-heading font-bold text-sm uppercase tracking-wider hover:text-white hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-bullhorn text-brand-crimson"></i>
+               class="px-8 py-4 rounded-xl chrome-border-box text-slate-200 font-heading font-bold text-sm uppercase tracking-wider hover:text-amber-400 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-bullhorn text-amber-400"></i>
               <span>Ver Servicios</span>
             </a>
           </div>
@@ -245,7 +246,7 @@
               <p class="text-[11px] sm:text-xs text-slate-400 font-semibold uppercase tracking-wider mt-1">Gestión Dedicada</p>
             </div>
             <div>
-              <p class="font-heading font-black text-2xl sm:text-3xl metallic-ruby-text">+500</p>
+              <p class="font-heading font-black text-2xl sm:text-3xl metallic-gold-text">+500</p>
               <p class="text-[11px] sm:text-xs text-slate-400 font-semibold uppercase tracking-wider mt-1">Notas en Medios</p>
             </div>
             <div>
@@ -255,136 +256,43 @@
           </div>
         </div>
 
-        <!-- Render Fiel del Logo JB Producciones -->
+        <!-- Render del Nuevo Logo Dorado Oficial JB Press -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative w-full max-w-lg">
             
-            <!-- Resplandor posterior del logo -->
-            <div class="absolute inset-0 bg-gradient-to-tr from-brand-red/35 via-brand-ruby/25 to-transparent blur-3xl rounded-3xl"></div>
+            <!-- Resplandor posterior dorado -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/25 via-yellow-600/20 to-transparent blur-3xl rounded-3xl"></div>
             
             <!-- Contenedor Showroom del Logo -->
-            <div class="relative rounded-3xl p-6 sm:p-9 bg-[#0b0b10]/95 border border-white/15 shadow-2xl backdrop-blur-2xl text-center group hover:border-red-600/50 transition-all duration-500">
+            <div class="relative rounded-3xl p-6 sm:p-9 bg-[#0b0b10]/95 border border-white/15 shadow-2xl backdrop-blur-2xl text-center group hover:border-amber-500/50 transition-all duration-500">
               
               <!-- Tag de marca -->
               <div class="flex items-center justify-between text-[11px] font-heading font-bold tracking-widest text-slate-400 uppercase mb-4 px-2">
-                <span class="flex items-center gap-1.5 text-brand-crimson">
-                  <i class="fa-solid fa-shield-halved"></i> SELLO OFICIAL
+                <span class="flex items-center gap-1.5 text-amber-400">
+                  <i class="fa-solid fa-star"></i> SELLO OFICIAL
                 </span>
-                <span class="text-slate-500">BUENOS AIRES · ARGENTINA</span>
+                <span class="text-slate-400">BUENOS AIRES · ARGENTINA</span>
               </div>
 
-              <!-- SVG 3D REALISTA FIEL AL LOGO ADJUNTADO -->
-              <div class="py-2 flex items-center justify-center">
-                <svg viewBox="0 0 700 520" class="w-full h-auto max-h-[340px] jb-logo-svg select-none" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <!-- Gradientes Metálicos Rojo Rubí Facetados -->
-                    <linearGradient id="rubyBase" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#ff7b83" />
-                      <stop offset="25%" stop-color="#ff1a24" />
-                      <stop offset="55%" stop-color="#b8040d" />
-                      <stop offset="85%" stop-color="#690005" />
-                      <stop offset="100%" stop-color="#ff2e38" />
-                    </linearGradient>
-
-                    <linearGradient id="rubyBevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
-                      <stop offset="35%" stop-color="#ff4752" stop-opacity="0.7" />
-                      <stop offset="70%" stop-color="#a80009" stop-opacity="0.3" />
-                      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8" />
-                    </linearGradient>
-
-                    <linearGradient id="rubyInnerSheen" x1="20%" y1="0%" x2="80%" y2="100%">
-                      <stop offset="0%" stop-color="#ff333f" />
-                      <stop offset="40%" stop-color="#ffffff" />
-                      <stop offset="60%" stop-color="#cc000b" />
-                      <stop offset="100%" stop-color="#540003" />
-                    </linearGradient>
-
-                    <!-- Gradientes Cromo Plateado Pulido -->
-                    <linearGradient id="chromeGloss" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#ffffff" />
-                      <stop offset="20%" stop-color="#e2e8f0" />
-                      <stop offset="48%" stop-color="#94a3b8" />
-                      <stop offset="52%" stop-color="#334155" />
-                      <stop offset="75%" stop-color="#cbd5e1" />
-                      <stop offset="100%" stop-color="#f8fafc" />
-                    </linearGradient>
-
-                    <filter id="glowDrop" x="-20%" y="-20%" width="140%" height="140%">
-                      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#e50914" flood-opacity="0.55" />
-                    </filter>
-                  </defs>
-
-                  <!-- ================= LETRA J METÁLICA ROJA ================= -->
-                  <!-- Sombra y bisel exterior J -->
-                  <polygon points="50,180 120,270 120,380 170,440 310,440 350,390 350,90 270,90 270,360 250,380 190,380 150,340 150,290 80,210" 
-                           fill="#470003" filter="url(#glowDrop)" />
-                  
-                  <!-- Cuerpo Principal J Rojo Rubí -->
-                  <polygon points="55,185 125,275 125,375 172,432 305,432 342,385 342,95 278,95 278,355 248,372 192,372 158,335 158,285 85,215" 
-                           fill="url(#rubyBase)" stroke="#ff858d" stroke-width="3" />
-
-                  <!-- Facetas y reflejos especulares de J -->
-                  <polygon points="278,95 342,95 325,120 295,120" fill="url(#rubyBevelLight)" opacity="0.85" />
-                  <polygon points="342,95 342,385 320,365 320,120" fill="#750209" />
-                  <polygon points="278,95 295,120 295,350 278,355" fill="url(#rubyInnerSheen)" opacity="0.6" />
-                  <polygon points="55,185 85,215 125,275" fill="#ffffff" opacity="0.75" />
-                  <polygon points="125,375 172,432 200,410 160,365" fill="#470003" />
-                  <polygon points="172,432 305,432 290,410 200,410" fill="url(#rubyBevelLight)" />
-
-                  <!-- Reflejo curvo líquido interior de la J -->
-                  <path d="M 285,115 C 295,200 295,300 280,350 C 275,370 230,370 200,360" 
-                        fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.65" />
-
-                  <!-- ================= LETRA B METÁLICA ROJA ================= -->
-                  <!-- Sombra y bisel exterior B -->
-                  <polygon points="360,90 580,90 645,160 590,240 655,320 590,440 360,440" 
-                           fill="#470003" filter="url(#glowDrop)" />
-
-                  <!-- Cuerpo Principal B Rojo Rubí -->
-                  <polygon points="368,96 572,96 635,162 582,238 642,318 582,432 368,432" 
-                           fill="url(#rubyBase)" stroke="#ff858d" stroke-width="3" />
-
-                  <!-- Hueco superior de la B -->
-                  <polygon points="435,160 545,160 575,195 540,225 435,225" fill="#0b0b10" stroke="#750209" stroke-width="4" />
-                  <!-- Hueco inferior de la B -->
-                  <polygon points="435,280 545,280 580,335 540,375 435,375" fill="#0b0b10" stroke="#750209" stroke-width="4" />
-
-                  <!-- Facetas y reflejos especulares de B -->
-                  <polygon points="368,96 572,96 550,125 390,125" fill="url(#rubyBevelLight)" opacity="0.9" />
-                  <polygon points="572,96 635,162 590,180 550,125" fill="#ffffff" opacity="0.5" />
-                  <polygon points="635,162 582,238 560,220 590,180" fill="#540003" />
-                  <polygon points="582,238 642,318 595,310 565,255" fill="url(#rubyBevelLight)" opacity="0.75" />
-                  <polygon points="642,318 582,432 550,405 595,310" fill="#470003" />
-                  <polygon points="368,432 582,432 550,405 390,405" fill="url(#rubyBevelLight)" />
-                  <polygon points="368,96 390,125 390,405 368,432" fill="#750209" />
-
-                  <!-- Reflejos líquidos internos en la B -->
-                  <path d="M 400,120 C 500,115 545,140 550,180" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.75" />
-                  <path d="M 400,265 C 510,260 565,295 555,360" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.7" />
-
-                  <!-- ================= TEXTO CROMADO "PRODUCCIONES" ================= -->
-                  <!-- Bisel sombra cromo -->
-                  <text x="350" y="492" text-anchor="middle" font-family="'Orbitron', 'Montserrat', sans-serif" font-weight="900" font-size="52" letter-spacing="9" 
-                        fill="#050508" stroke="#000000" stroke-width="9">PRODUCCIONES</text>
-                  <!-- Base cromada -->
-                  <text x="350" y="490" text-anchor="middle" font-family="'Orbitron', 'Montserrat', sans-serif" font-weight="900" font-size="52" letter-spacing="9" 
-                        fill="url(#chromeGloss)" stroke="#ffffff" stroke-width="1.8">PRODUCCIONES</text>
-                </svg>
+              <!-- Imagen Fiel del Nuevo Logo Dorado -->
+              <div class="py-4 flex items-center justify-center">
+                <img src="c2c9a92e-0146-4b32-b647-89c73d1b2e52.png" 
+                     alt="J.B. PRESS Prensa & Difusión" 
+                     class="w-full max-w-[320px] h-auto object-contain gold-logo-glow select-none transition-transform duration-500 group-hover:scale-105">
               </div>
 
-              <!-- Divisor Metálico -->
-              <div class="h-[2px] w-full bg-gradient-to-r from-transparent via-red-500 to-transparent my-5"></div>
+              <!-- Divisor Metálico Dorado -->
+              <div class="h-[2px] w-full bg-gradient-to-r from-transparent via-amber-400 to-transparent my-5"></div>
 
               <!-- Datos Rápidos del Showroom -->
               <div class="space-y-1.5">
-                <p class="font-heading font-black text-lg text-white tracking-widest uppercase">
+                <p class="font-heading font-black text-lg metallic-gold-text tracking-widest uppercase">
                   J.B. PRESS & PRODUCCIONES
                 </p>
                 <p class="text-xs text-slate-300 font-medium">
                   Prensa & Difusión del Espectáculo · Buenos Aires
                 </p>
-                <div class="pt-2 flex items-center justify-center gap-2 text-brand-crimson font-bold text-sm">
+                <div class="pt-2 flex items-center justify-center gap-2 text-amber-400 font-bold text-sm">
                   <i class="fa-solid fa-phone-volume animate-bounce"></i>
                   <a href="tel:+5491157072115" class="hover:underline">54 9 11 5707-2115</a>
                 </div>
@@ -405,7 +313,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-950/40 border border-brand-red/30 text-brand-crimson text-xs font-bold uppercase tracking-widest mb-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
           <i class="fa-solid fa-satellite-dish"></i> Comunidad & Canales Oficiales
         </div>
         <h2 class="font-heading font-black text-3xl sm:text-4xl text-white">
@@ -461,7 +369,7 @@
         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
            class="group chrome-border-box p-6 rounded-2xl relative flex flex-col justify-between hover:-translate-y-2 transition-all duration-300">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-700 to-red-500 flex items-center justify-center text-white text-2xl mb-5 shadow-lg shadow-red-900/40 group-hover:scale-110 transition-transform">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-700 to-red-500 flex items-center justify-center text-white text-2xl mb-5 shadow-lg group-hover:scale-110 transition-transform">
               <i class="fab fa-youtube"></i>
             </div>
             <span class="inline-block px-2.5 py-0.5 rounded-full bg-red-500/10 text-red-400 text-[10px] font-bold tracking-wider uppercase mb-2">
@@ -480,16 +388,16 @@
         <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" 
            class="group chrome-border-box p-6 rounded-2xl relative flex flex-col justify-between hover:-translate-y-2 transition-all duration-300">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-neutral-900 via-neutral-800 to-teal-500 border border-teal-400/30 flex items-center justify-center text-white text-2xl mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-neutral-900 via-neutral-800 to-amber-500 border border-amber-400/30 flex items-center justify-center text-white text-2xl mb-5 shadow-lg group-hover:scale-110 transition-transform">
               <i class="fab fa-tiktok"></i>
             </div>
-            <span class="inline-block px-2.5 py-0.5 rounded-full bg-teal-500/10 text-teal-300 text-[10px] font-bold tracking-wider uppercase mb-2">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 text-[10px] font-bold tracking-wider uppercase mb-2">
               Tendencias & Backstage
             </span>
             <h3 class="font-heading font-bold text-lg text-white">TikTok</h3>
             <p class="text-xs text-slate-400 mt-1">@jbpress.ok</p>
           </div>
-          <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-bold text-teal-300 group-hover:text-white">
+          <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-bold text-amber-300 group-hover:text-white">
             <span>Ver Videos</span>
             <i class="fa-solid fa-arrow-right -rotate-45 group-hover:rotate-0 transition-transform"></i>
           </div>
@@ -526,7 +434,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-brand-crimson font-heading uppercase tracking-[0.25em] text-xs font-bold">Nuestra Especialidad</span>
+        <span class="text-amber-400 font-heading uppercase tracking-[0.25em] text-xs font-bold">Nuestra Especialidad</span>
         <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mt-2">
           Servicios Integrales de Prensa y Comunicación
         </h2>
@@ -539,7 +447,7 @@
         
         <!-- Servicio 1 -->
         <div class="chrome-border-box p-8 rounded-2xl group hover:-translate-y-1.5 transition-all duration-300">
-          <div class="w-14 h-14 rounded-xl bg-red-950/60 border border-brand-red/40 flex items-center justify-center text-brand-crimson text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-all shadow-glow-ruby">
+          <div class="w-14 h-14 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-glow-gold">
             <i class="fa-solid fa-newspaper"></i>
           </div>
           <h3 class="font-heading font-bold text-xl text-white mb-3">Gacetillas y Portales Digitales</h3>
@@ -547,14 +455,14 @@
             Redacción profesional con estilo periodístico que despierta el interés de editores y cronistas. Distribución en los principales portales de noticias del espectáculo.
           </p>
           <ul class="text-xs text-slate-400 space-y-2.5">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Portales líderes de noticias</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Dossiers de prensa y gacetillas con fotos HD</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Portales líderes de noticias</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Dossiers de prensa y gacetillas con fotos HD</li>
           </ul>
         </div>
 
         <!-- Servicio 2 -->
         <div class="chrome-border-box p-8 rounded-2xl group hover:-translate-y-1.5 transition-all duration-300">
-          <div class="w-14 h-14 rounded-xl bg-red-950/60 border border-brand-red/40 flex items-center justify-center text-brand-crimson text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-all shadow-glow-ruby">
+          <div class="w-14 h-14 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-glow-gold">
             <i class="fa-solid fa-tv"></i>
           </div>
           <h3 class="font-heading font-bold text-xl text-white mb-3">Difusión en Televisión y Radio</h3>
@@ -562,14 +470,14 @@
             Gestión de entrevistas en vivo y en piso para obras teatrales, bandas musicales, solistas y elencos cinematográficos en canales de aire y señales de cable.
           </p>
           <ul class="text-xs text-slate-400 space-y-2.5">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Programas centrales y de espectáculos</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Radios FM líderes y cadenas nacionales</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Programas centrales y de espectáculos</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Radios FM líderes y cadenas nacionales</li>
           </ul>
         </div>
 
         <!-- Servicio 3 -->
         <div class="chrome-border-box p-8 rounded-2xl group hover:-translate-y-1.5 transition-all duration-300">
-          <div class="w-14 h-14 rounded-xl bg-red-950/60 border border-brand-red/40 flex items-center justify-center text-brand-crimson text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-all shadow-glow-ruby">
+          <div class="w-14 h-14 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-glow-gold">
             <i class="fa-solid fa-microphone-lines"></i>
           </div>
           <h3 class="font-heading font-bold text-xl text-white mb-3">Ruedas de Prensa & Alfombras Rojas</h3>
@@ -577,14 +485,14 @@
             Organización completa de convocatorias para medios gráficos, móviles televisivos, críticos y fotoperiodistas en funciones especiales y estrenos.
           </p>
           <ul class="text-xs text-slate-400 space-y-2.5">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Fotocall, acreditaciones y listas de prensa</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Coordinación de notas exclusivas 1 a 1</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Fotocall, acreditaciones y listas de prensa</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Coordinación de notas exclusivas 1 a 1</li>
           </ul>
         </div>
 
         <!-- Servicio 4 -->
         <div class="chrome-border-box p-8 rounded-2xl group hover:-translate-y-1.5 transition-all duration-300">
-          <div class="w-14 h-14 rounded-xl bg-red-950/60 border border-brand-red/40 flex items-center justify-center text-brand-crimson text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-all shadow-glow-ruby">
+          <div class="w-14 h-14 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-glow-gold">
             <i class="fa-solid fa-camera-retro"></i>
           </div>
           <h3 class="font-heading font-bold text-xl text-white mb-3">Cobertura Audiovisual y Fotográfica</h3>
@@ -592,14 +500,14 @@
             Registro visual de alta definición de cada función, recital o presentación para alimentar tanto a medios de prensa como a las redes sociales del artista.
           </p>
           <ul class="text-xs text-slate-400 space-y-2.5">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Fotografía profesional de escena</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Reels, clips y resúmenes para difusión</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Fotografía profesional de escena</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Reels, clips y resúmenes para difusión</li>
           </ul>
         </div>
 
         <!-- Servicio 5 -->
         <div class="chrome-border-box p-8 rounded-2xl group hover:-translate-y-1.5 transition-all duration-300">
-          <div class="w-14 h-14 rounded-xl bg-red-950/60 border border-brand-red/40 flex items-center justify-center text-brand-crimson text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-all shadow-glow-ruby">
+          <div class="w-14 h-14 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-glow-gold">
             <i class="fa-solid fa-chart-pie"></i>
           </div>
           <h3 class="font-heading font-bold text-xl text-white mb-3">Clipping & Monitoreo de Medios</h3>
@@ -607,14 +515,14 @@
             Seguimiento riguroso de cada publicación, mención radial o televisiva, entregando reportes ejecutivos con valorización publicitaria para auspiciantes.
           </p>
           <ul class="text-xs text-slate-400 space-y-2.5">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Informe completo en PDF con enlaces y fotos</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Medición del retorno de inversión mediática</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Informe completo en PDF con enlaces y fotos</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Medición del retorno de inversión mediática</li>
           </ul>
         </div>
 
         <!-- Servicio 6 -->
         <div class="chrome-border-box p-8 rounded-2xl group hover:-translate-y-1.5 transition-all duration-300">
-          <div class="w-14 h-14 rounded-xl bg-red-950/60 border border-brand-red/40 flex items-center justify-center text-brand-crimson text-2xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-all shadow-glow-ruby">
+          <div class="w-14 h-14 rounded-xl bg-amber-950/40 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-glow-gold">
             <i class="fa-solid fa-clapperboard"></i>
           </div>
           <h3 class="font-heading font-bold text-xl text-white mb-3">JB Producciones</h3>
@@ -622,8 +530,8 @@
             Articulación integral entre salas teatrales, centros culturales, productores ejecutivos y empresas para lograr espectáculos exitosos y rentables.
           </p>
           <ul class="text-xs text-slate-400 space-y-2.5">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Producción artística y ejecutiva</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-crimson"></i> Enlace con promotores de salas y festivales</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Producción artística y ejecutiva</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Enlace con promotores de salas y festivales</li>
           </ul>
         </div>
 
@@ -639,7 +547,7 @@
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
         <div>
-          <span class="text-brand-crimson font-heading uppercase tracking-[0.25em] text-xs font-bold">Trayectoria Escénica</span>
+          <span class="text-amber-400 font-heading uppercase tracking-[0.25em] text-xs font-bold">Trayectoria Escénica</span>
           <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mt-2">
             Coberturas & Producciones
           </h2>
@@ -647,7 +555,7 @@
         
         <!-- Filtros Rápidos Interactivos -->
         <div class="flex flex-wrap gap-2 mt-6 md:mt-0" id="filter-container">
-          <button class="filter-btn active px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-brand-red text-white" data-filter="all">Todos</button>
+          <button class="filter-btn active px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-amber-500 text-slate-950" data-filter="all">Todos</button>
           <button class="filter-btn px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/10 text-slate-300" data-filter="teatro">Teatro</button>
           <button class="filter-btn px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/10 text-slate-300" data-filter="musica">Música</button>
           <button class="filter-btn px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/10 text-slate-300" data-filter="eventos">Eventos</button>
@@ -664,20 +572,20 @@
                  alt="Teatro Calle Corrientes" 
                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-black/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 px-3 py-1 rounded-md bg-red-600/90 text-white text-[11px] font-bold uppercase tracking-wider">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-md bg-amber-500 text-slate-950 text-[11px] font-extrabold uppercase tracking-wider">
               Calle Corrientes
             </span>
           </div>
           <div class="p-6">
-            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-crimson transition-colors">
+            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition-colors">
               Gran Estreno Teatral
             </h3>
             <p class="text-xs text-slate-400 mb-4 leading-relaxed">
               Convocatoria de más de 20 medios televisivos y portales de noticias en alfombra roja y nota central de domingo.
             </p>
             <div class="flex items-center justify-between text-xs text-slate-300 font-semibold border-t border-white/10 pt-3">
-              <span><i class="fa-solid fa-users text-brand-crimson mr-1"></i> Cobertura VIP</span>
-              <span class="text-brand-crimson">Difusión Total</span>
+              <span><i class="fa-solid fa-users text-amber-400 mr-1"></i> Cobertura VIP</span>
+              <span class="text-amber-400 font-bold">Difusión Total</span>
             </div>
           </div>
         </div>
@@ -689,20 +597,20 @@
                  alt="Gira Musical" 
                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-black/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 px-3 py-1 rounded-md bg-brand-crimson text-white text-[11px] font-bold uppercase tracking-wider">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-md bg-amber-400 text-slate-950 text-[11px] font-extrabold uppercase tracking-wider">
               Gira Nacional
             </span>
           </div>
           <div class="p-6">
-            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-crimson transition-colors">
+            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition-colors">
               Lanzamiento de Álbum & Recital
             </h3>
             <p class="text-xs text-slate-400 mb-4 leading-relaxed">
               Rotación radial en las principales frecuencias del país y entrevistas exclusivas en acústicos de radio.
             </p>
             <div class="flex items-center justify-between text-xs text-slate-300 font-semibold border-t border-white/10 pt-3">
-              <span><i class="fa-solid fa-compact-disc text-brand-crimson mr-1"></i> Rock & Pop</span>
-              <span class="text-brand-crimson">Radio + Portales</span>
+              <span><i class="fa-solid fa-compact-disc text-amber-400 mr-1"></i> Rock & Pop</span>
+              <span class="text-amber-400 font-bold">Radio + Portales</span>
             </div>
           </div>
         </div>
@@ -714,20 +622,20 @@
                  alt="Conferencia y Junket de Prensa" 
                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-black/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 px-3 py-1 rounded-md bg-slate-800 text-slate-200 text-[11px] font-bold uppercase tracking-wider border border-white/20">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-md bg-slate-800 text-amber-300 text-[11px] font-bold uppercase tracking-wider border border-amber-500/30">
               Conferencia
             </span>
           </div>
           <div class="p-6">
-            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-crimson transition-colors">
+            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-amber-400 transition-colors">
               Rueda de Prensa & Junket
             </h3>
             <p class="text-xs text-slate-400 mb-4 leading-relaxed">
               Media junket con cronistas especializados, catering para periodistas y distribución instantánea de material audiovisual.
             </p>
             <div class="flex items-center justify-between text-xs text-slate-300 font-semibold border-t border-white/10 pt-3">
-              <span><i class="fa-solid fa-microphone text-brand-crimson mr-1"></i> Cobertura Total</span>
-              <span class="text-brand-crimson">TV & Radio</span>
+              <span><i class="fa-solid fa-microphone text-amber-400 mr-1"></i> Cobertura Total</span>
+              <span class="text-amber-400 font-bold">TV & Radio</span>
             </div>
           </div>
         </div>
@@ -744,7 +652,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-brand-crimson font-heading uppercase tracking-[0.25em] text-xs font-bold">Relaciones Estratégicas</span>
+        <span class="text-amber-400 font-heading uppercase tracking-[0.25em] text-xs font-bold">Relaciones Estratégicas</span>
         <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mt-2">
           Llegamos a los Medios que Importan
         </h2>
@@ -756,7 +664,7 @@
       <!-- Iconografía / Mosaico de Canales -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
         <div class="chrome-border-box p-8 rounded-2xl text-center group">
-          <div class="w-16 h-16 mx-auto rounded-full bg-red-600/10 border border-brand-red/30 flex items-center justify-center text-brand-crimson text-3xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-16 h-16 mx-auto rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-3xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-tv"></i>
           </div>
           <h4 class="font-heading font-bold text-white text-lg">Televisión Abierta</h4>
@@ -764,7 +672,7 @@
         </div>
 
         <div class="chrome-border-box p-8 rounded-2xl text-center group">
-          <div class="w-16 h-16 mx-auto rounded-full bg-red-600/10 border border-brand-red/30 flex items-center justify-center text-brand-crimson text-3xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-16 h-16 mx-auto rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-3xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-radio"></i>
           </div>
           <h4 class="font-heading font-bold text-white text-lg">Radios Centrales</h4>
@@ -772,7 +680,7 @@
         </div>
 
         <div class="chrome-border-box p-8 rounded-2xl text-center group">
-          <div class="w-16 h-16 mx-auto rounded-full bg-red-600/10 border border-brand-red/30 flex items-center justify-center text-brand-crimson text-3xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-16 h-16 mx-auto rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-3xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-globe"></i>
           </div>
           <h4 class="font-heading font-bold text-white text-lg">Portales de Noticias</h4>
@@ -780,7 +688,7 @@
         </div>
 
         <div class="chrome-border-box p-8 rounded-2xl text-center group">
-          <div class="w-16 h-16 mx-auto rounded-full bg-red-600/10 border border-brand-red/30 flex items-center justify-center text-brand-crimson text-3xl mb-4 group-hover:scale-110 transition-transform">
+          <div class="w-16 h-16 mx-auto rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-3xl mb-4 group-hover:scale-110 transition-transform">
             <i class="fa-solid fa-newspaper"></i>
           </div>
           <h4 class="font-heading font-bold text-white text-lg">Revistas & Diarios</h4>
@@ -798,7 +706,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-brand-crimson font-heading uppercase tracking-[0.25em] text-xs font-bold">Iniciá tu Campaña</span>
+        <span class="text-amber-400 font-heading uppercase tracking-[0.25em] text-xs font-bold">Iniciá tu Campaña</span>
         <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mt-2">
           Contactá a J.B. PRESS / JB Producciones
         </h2>
@@ -812,22 +720,22 @@
         <!-- Tarjeta de Información Directa -->
         <div class="lg:col-span-5 space-y-6">
           <div class="chrome-border-box p-8 sm:p-10 rounded-3xl relative overflow-hidden">
-            <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-            <h3 class="font-heading font-black text-2xl text-white mb-6">
+            <h3 class="font-heading font-black text-2xl metallic-gold-text mb-6">
               Líneas de Difusión
             </h3>
 
             <div class="space-y-6">
               <!-- Teléfono Oficial -->
               <div class="flex items-start gap-4">
-                <div class="w-12 h-12 rounded-xl bg-red-600/20 text-brand-crimson flex items-center justify-center shrink-0">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                   <i class="fa-solid fa-phone-volume text-xl"></i>
                 </div>
                 <div>
                   <p class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Teléfono / WhatsApp</p>
                   <a href="https://wa.me/5491157072115" target="_blank" rel="noopener noreferrer" 
-                     class="text-lg font-bold text-white hover:text-brand-crimson transition-colors">
+                     class="text-lg font-bold text-white hover:text-amber-400 transition-colors">
                     +54 9 11 5707-2115
                   </a>
                   <p class="text-xs text-slate-400 mt-0.5">Atención personalizada y prensa urgente</p>
@@ -836,7 +744,7 @@
 
               <!-- Producción -->
               <div class="flex items-start gap-4">
-                <div class="w-12 h-12 rounded-xl bg-red-600/20 text-brand-crimson flex items-center justify-center shrink-0">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                   <i class="fa-solid fa-theater-masks text-xl"></i>
                 </div>
                 <div>
@@ -848,7 +756,7 @@
 
               <!-- Cobertura -->
               <div class="flex items-start gap-4">
-                <div class="w-12 h-12 rounded-xl bg-red-600/20 text-brand-crimson flex items-center justify-center shrink-0">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                   <i class="fa-solid fa-location-dot text-xl"></i>
                 </div>
                 <div>
@@ -884,18 +792,18 @@
                 <div>
                   <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" for="nombre">Nombre o Contacto *</label>
                   <input type="text" id="nombre" required placeholder="Ej: Lucas González" 
-                         class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all text-sm">
+                         class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all text-sm">
                 </div>
                 <div>
                   <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" for="compania">Artista, Banda o Compañía *</label>
                   <input type="text" id="compania" required placeholder="Ej: Obra / Grupo / Solista" 
-                         class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all text-sm">
+                         class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all text-sm">
                 </div>
               </div>
 
               <div>
                 <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" for="tipo_espectaculo">Tipo de Espectáculo / Lanzamiento</label>
-                <select id="tipo_espectaculo" class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all text-sm">
+                <select id="tipo_espectaculo" class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all text-sm">
                   <option value="Obra de Teatro / Comedia Musical">Obra de Teatro / Comedia Musical</option>
                   <option value="Banda Musical / Solista / Recital">Banda Musical / Solista / Recital</option>
                   <option value="Cine / Avant Première / Audiovisual">Cine / Avant Première / Audiovisual</option>
@@ -908,13 +816,13 @@
               <div>
                 <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2" for="mensaje">Detalles de la Difusión (Fechas, Sala o Necesidad) *</label>
                 <textarea id="mensaje" rows="4" required placeholder="Contanos brevemente sobre las fechas previstas, sala o qué cobertura necesitás..." 
-                          class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all text-sm resize-none"></textarea>
+                          class="w-full px-4 py-3.5 rounded-xl bg-[#09090e] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all text-sm resize-none"></textarea>
               </div>
 
               <div class="flex flex-col sm:flex-row items-center gap-4">
                 <button type="submit" 
-                        class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-red via-red-600 to-brand-rubyDark text-white font-heading font-black text-sm uppercase tracking-wider shadow-glow-ruby hover:shadow-glow-red-lg active:scale-95 transition-all flex items-center justify-center gap-3">
-                  <i class="fab fa-whatsapp text-xl text-green-300"></i>
+                        class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 text-slate-950 font-heading font-black text-sm uppercase tracking-wider shadow-glow-gold hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-3">
+                  <i class="fab fa-whatsapp text-xl text-slate-950"></i>
                   <span>Enviar Consulta a WhatsApp</span>
                 </button>
                 <span class="text-xs text-slate-400 text-center sm:text-left">
@@ -945,29 +853,27 @@
         
         <!-- Identidad Footer -->
         <div class="md:col-span-5 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600 to-brand-rubyDark p-[1.5px]">
-            <div class="w-full h-full bg-[#08080c] rounded-[10px] flex items-center justify-center font-heading font-black text-xl metallic-ruby-text">
-              JB
-            </div>
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-700 p-[1.5px] overflow-hidden bg-black flex items-center justify-center">
+            <img src="c2c9a92e-0146-4b32-b647-89c73d1b2e52.png" alt="J.B. PRESS" class="w-full h-full object-contain p-0.5">
           </div>
           <div>
-            <h4 class="font-heading font-black text-white text-base tracking-wider">J.B. PRESS</h4>
+            <h4 class="font-heading font-black metallic-gold-text text-base tracking-wider">J.B. PRESS</h4>
             <p class="text-xs text-slate-400">Prensa & Difusión del Espectáculo · JB Producciones</p>
           </div>
         </div>
 
         <!-- Redes en Footer -->
         <div class="md:col-span-7 flex flex-wrap items-center justify-start md:justify-end gap-3">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-red-600/30 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all" aria-label="Instagram">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-amber-500/20 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 transition-all" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-red-600/30 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all" aria-label="Facebook">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-amber-500/20 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 transition-all" aria-label="Facebook">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-red-600/30 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all" aria-label="YouTube">
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-amber-500/20 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 transition-all" aria-label="YouTube">
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-red-600/30 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all" aria-label="TikTok">
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-amber-500/20 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 transition-all" aria-label="TikTok">
             <i class="fab fa-tiktok"></i>
           </a>
           <a href="https://wa.me/5491157072115" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/40 border border-emerald-500/30 flex items-center justify-center text-emerald-400 hover:text-white transition-all" aria-label="WhatsApp">
@@ -981,8 +887,8 @@
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs text-slate-400">
         <p>&copy; <span id="current-year"></span> J.B. PRESS / JB Producciones. Todos los derechos reservados.</p>
         <div class="flex items-center gap-6">
-          <a href="#inicio" class="hover:text-white transition-colors">Volver arriba</a>
-          <a href="https://wa.me/5491157072115" target="_blank" rel="noopener noreferrer" class="text-brand-crimson hover:underline">
+          <a href="#inicio" class="hover:text-amber-400 transition-colors">Volver arriba</a>
+          <a href="https://wa.me/5491157072115" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">
             +54 9 11 5707-2115
           </a>
         </div>
@@ -1034,10 +940,10 @@
     filterButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         filterButtons.forEach(b => {
-          b.classList.remove('bg-brand-red', 'text-white');
+          b.classList.remove('bg-amber-500', 'text-slate-950');
           b.classList.add('bg-white/5', 'text-slate-300');
         });
-        btn.classList.add('bg-brand-red', 'text-white');
+        btn.classList.add('bg-amber-500', 'text-slate-950');
         btn.classList.remove('bg-white/5', 'text-slate-300');
 
         const filterValue = btn.getAttribute('data-filter');
@@ -1071,8 +977,7 @@
 
       formAlert.classList.remove('hidden');
 
-      // Abrir WhatsApp directamente dentro del evento de envío para evitar
-      // que el navegador bloquee la ventana emergente.
+      // Abrir WhatsApp directamente dentro del evento de envío
       window.open(`https://wa.me/5491157072115?text=${mensajeWhatsApp}`, '_blank', 'noopener,noreferrer');
     });
 
@@ -1080,9 +985,9 @@
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('main-nav');
       if (window.scrollY > 40) {
-        nav.classList.add('bg-brand-deepBlack', 'shadow-2xl', 'border-red-900/30');
+        nav.classList.add('bg-brand-deepBlack', 'shadow-2xl', 'border-amber-900/30');
       } else {
-        nav.classList.remove('shadow-2xl', 'border-red-900/30');
+        nav.classList.remove('shadow-2xl', 'border-amber-900/30');
       }
     });
   </script>
